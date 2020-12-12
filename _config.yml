@@ -1,12 +1,11 @@
-# Dependencies
-markdown:         kramdown
-remote_theme: fongandrew/hydeout
-
 # Setup
 title:            Wendy Tran
-tagline:          'Aspriring Programmer. A blog dedicated to documenting my learnings & reflections on this journey.'
-description:      'Aspiring Programmer'
+tagline:          'Aspriring Developer. A blog about learning how to program.'
+description:      'Aspiring Developer.'/n'This blog documents my learnings and reflections on programming.'
 url:              https://twendy00.github.io
+author:           Wendy Tran
+lang:             en_US
+timezone:         US/Mountain
 baseurl:          ""
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
@@ -14,23 +13,27 @@ baseurl:          ""
                   # other pages at root, see the paginate_path and
                   # sidebar_blog_link below.
 
-author:
-  name:           'Wendy Tran'
-  url:            https://twitter.com/fongandrewc
+github_username: twendy00
+# linkedin: wendalyntran
+
+# Dependencies
+markdown:         kramdown
+remote_theme:     fongandrew/hydeout
+# plugins:
+#   - jekyll-feed
+#   - jekyll-archives
+#   - jekyll-gist
+#   - jekyll-paginate
+#   - jekyll-remote-theme
+#   - github-pages
+#   - jemoji
+#   - jekyll-seo-tag
+#   - jekyll-sitemap
 
 paginate:         5
 paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
 
-plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-remote-theme
-  - github-pages
-  - jemoji
-  - jekyll-seo-tag
-  - jekyll-sitemap
 
 # Sidebar link settings
 sidebar_home_link:  true
@@ -38,3 +41,33 @@ sidebar_home_link:  true
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
+
+exclude: # ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+    - Gemfile
+    - Gemfile.lock
+    - node_modules
+    - vendor/bundle/
+    - vendor/cache/
+    - vendor/gems
+    - vendor/ruby/
+
+jekyll_compose:
+  draft_default_front_matter:
+    description:
+    image:
+    category:
+    tags:
+  post_default_front_matter:
+    last_modified_at: 
+    permalink: 
+    description:
+    image:
+    published: true
+    sitemap: true
+    excerpt_separator: <!--more-->
+    categories:
+    tags:
+
+# Compress CSS files
+sass:
+    style: compressed
