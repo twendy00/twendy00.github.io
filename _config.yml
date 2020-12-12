@@ -1,7 +1,7 @@
 # Setup
 title:            Wendy Tran
 tagline:          'Aspriring Developer. A blog about learning how to program.'
-description:      'Aspiring Developer.'/n'This blog documents my learnings and reflections on programming.'
+description:      'Aspiring Developer. This blog documents my learnings and reflections on programming.'
 url:              https://twendy00.github.io
 author:           Wendy Tran
 lang:             en_US
@@ -19,16 +19,6 @@ github_username: twendy00
 # Dependencies
 markdown:         kramdown
 remote_theme:     fongandrew/hydeout
-# plugins:
-#   - jekyll-feed
-#   - jekyll-archives
-#   - jekyll-gist
-#   - jekyll-paginate
-#   - jekyll-remote-theme
-#   - github-pages
-#   - jemoji
-#   - jekyll-seo-tag
-#   - jekyll-sitemap
 
 paginate:         5
 paginate_path:    '/page:num'
@@ -42,7 +32,7 @@ sidebar_home_link:  true
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
 
-exclude: # ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+exclude:
     - Gemfile
     - Gemfile.lock
     - node_modules
