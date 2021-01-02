@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ruby Foundations - Truthiness
+title: "Ruby Foundations: Truthiness"
 excerpt_separator:  <!--more-->
 ---
 
