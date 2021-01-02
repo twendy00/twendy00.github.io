@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ruby Foundations: Truthiness"
+tags: ruby, truthiness
 excerpt_separator:  <!--more-->
 ---
 
